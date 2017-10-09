@@ -157,6 +157,9 @@ img:hover, a:hover {
 span a {
   color: #FCF760;
 }
+span a:hover {
+  color: #6B6B6B;s
+}
 
 ul {
   text-align: left;
