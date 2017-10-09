@@ -1,22 +1,24 @@
 body {
-  font-family: 'Helvetica Neue';
+  font-family: 'Avenir Next';
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   text-align: center;
+  color: white;
+  background-color: #1E1E1E;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 nav {
-  background-color: white;
+  background-color: #1E1E1E;
   position: fixed;
   width: 100vw;
   top: 0;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,25 +28,33 @@ nav div {
   display: flex;
   align-items: center;
   height: 50px;
-  justify-content: space-around;
+  justify-content: space-around;;
 }
 
 nav a {
-  font-size: 12px;
+  font-size: 9px;
   text-transform: uppercase;
   font-weight: 500;
   margin: 0 5px;
   letter-spacing: 0.15em;
-  color: black;
+  width: 18vw;
+  color: #6B6B6B;
 }
 
-nav a:first-child {
-  width: 200px;
+nav a:hover, a#home:hover {
+    letter-spacing: 0.3em;
+    color: #FCF760;
+  }
+
+a#home {
+  width: 30vw;
+  color: white;
 }
 
 h1 {
   text-transform: uppercase;
-  border: 4px solid black;
+  color: #FCF760;
+  border: 4px solid #FCF760;
   padding: 5px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -54,46 +64,56 @@ h1 {
   font-weight: 500;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: bold;
-  font-family: 'Lora';
+h3, p, li, textarea {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
   margin: 10px 0;
+  color: #FCF760;
+}
+
+h3 {
+  color: white;
+  margin: 10px 0;
+  font-size: 18px;
 }
 
 p {
-  text-align: left;
-  font-weight: 100;
-  font-family: 'Lora';
+  text-align: left; 
 }
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   margin: 20px auto;
   height: 350px;
-  width: 50vw;
 }
 
 #about, #skills, #contact, #projects-container {
-  width: 96vw;
-  margin: 30px auto;
-  padding-top: 50px;
-}
-
-textarea {
-  width: 94%;
-  padding: 8px;
-  font-size: 14px;
-  text-align: left;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 50px 0;
 }
  
 textarea, input {
-  border: 1px solid black;
-  font-family: 'Lora';
+  font-family: 'Avenir Next';
+}
+
+textarea {
+  border: 2px solid #6B6B6B;
+  background-color: #1E1E1E;
+  color: white;
+  width: 80vw;
+  padding: 8px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 0;
 }
 
 input[type='email'] {
@@ -103,25 +123,25 @@ input[type='email'] {
 }
 
 input[type='submit'] {
-  background-color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   padding: 8px;
   width: 100px;
-  border: 2px solid black;
-  box-shadow: 2px 2px 2px black;
+  border: 2px solid #FCF760;
+  background-color: #1E1E1E;
+  color: #FCF760;
 }
 
 input[type='submit']:hover {
-  box-shadow: inset 2px 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  border: 2px solid #6B6B6B;
+  color: #6B6B6B;
 } 
 
 img {
   height: 35vh;
   margin: auto;
-  border: 1px solid black;
 }
 
 img:hover, a:hover {
@@ -129,14 +149,13 @@ img:hover, a:hover {
 }
 
 #about p {
-  line-height: 1.8em;
-  font-size: 20px;
-  padding: 5vh 0;
+  line-height: 1.5em;
+  font-size: 18px;
+  padding: 5vh 30px;
 }
 
 span a {
-  font-style: italic;
-  font-weight: bold;
+  color: #FCF760;
 }
 
 ul {
@@ -148,11 +167,7 @@ ul {
 }
 
 li {
-  font-family: 'Lora';
-  font-weight: lighter;
-  line-height: 1.8em;
-  font-weight: 300;
-  width: auto;
+  line-height: 2.5em;
   text-align: center;
   font-size: 18px;
 }
@@ -161,10 +176,9 @@ li {
   display: flex;
   overflow-x: scroll; 
   justify-content: flex-start;
-  width: 100%;
   align-items: flex-start;
   padding-bottom: 30px;
-  margin: 10px auto;
+  margin: 10px 20px;
 }
 
 #projects-container {
@@ -187,17 +201,35 @@ li {
 .contact-links a {
   width: 20vw;
   margin: 10px;
-  padding: 10px 0;
+  height: 100px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #6B6B6B;
+}
+
+.contact-links a:hover {
+  margin-top: -5px;
+  transition: 0.8s;
+  color: #FCF760;
+} 
+
+.contact-links a:hover h3 {
+  color: #FCF760;
+  transition: 0.8s;
 }
 
 .contact-links h3 {
-  font-family: 'Helvetica Neue';
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B6B6B;
 }
 
 .project {
   text-align: left;
-  padding: 0 40px;
+  padding: 0 4vw;
 }
 
 .project p {
@@ -210,17 +242,16 @@ li {
 }
 
 #projects::-webkit-scrollbar-track {
-  border: 2px solid black;
+  border: 2px solid #6B6B6B;
 }
 
 #projects::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: #6B6B6B;
 }
 
 a.github {
   font-size: 14px;
   line-height: 3em;
-  font-weight: bold;
 }
 
 
@@ -230,21 +261,20 @@ a.github {
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   h1 {
     font-size: 36px;
+  }
+  nav {
+    height: 50px;
   }
   nav a {
     font-size: 15px;
     width: 120px;
   }  
 
-  nav a:hover {
-    letter-spacing: 0.3em;
-  }
-
   #about p {
-    font-size: 20px;
+    font-size: 22px;
     width: 70vw;
     margin: 20px auto;
   }
@@ -259,19 +289,12 @@ a.github {
   }
 
   img:hover {
-    box-shadow: 2px 2px 2px;
     transition: 0.4s; 
    }
 
   .contact-links i {
     font-size: 28px;
   }
-
-
-  .contact-links a:hover {
-    margin-top: -10px;
-    transition: 0.8s;
-  } 
 
   .contact-links a {
     width: 20vw;
