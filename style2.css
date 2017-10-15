@@ -106,7 +106,7 @@ textarea, input {
 }
 
 textarea {
-  border: 2px solid #6B6B6B;
+  border: 2px solid white;
   background-color: #1E1E1E;
   color: white;
   width: 80vw;
@@ -127,9 +127,9 @@ input[type='submit'] {
   font-size: 14px;
   padding: 8px;
   width: 100px;
-  border: 2px solid #FCF760;
+  border: 2px solid white;
   background-color: #1E1E1E;
-  color: #FCF760;
+  color: white;
 }
 
 input[type='submit']:hover {
@@ -193,7 +193,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   font-size: 14px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .contact-links i {
@@ -253,8 +253,13 @@ li {
 }
 
 a.github {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 3em;
+  color: #6B6B6B;
+}
+
+a.github:hover {
+  color: #FCF760;
 }
 
 
