@@ -4,7 +4,7 @@
   <meta charset='UTF-8' />
   <title>Julia Graves</title>
   <link rel='stylesheet' type='text/css' href='reset.css'>
-  <link rel='stylesheet' type='text/css' href='style2.css'>
+  <link rel='stylesheet' type='text/css' href='style.css'>
   <script src="https://use.fontawesome.com/c237e30b0b.js"></script>
   <link rel='icon' href='./images/favicon.ico'>
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
@@ -33,6 +33,7 @@
 
 	<main>
 		<div id='about'>
+			<img src='./images/headshot.png' id='headshot' />
 				<p>Hi! My name is Julia and I am a fullstack web
 				 developer. As a recent college graduate, I am eager to apply and 
 				 expand my programming skills working as a fullstack web developer. 
@@ -71,33 +72,39 @@
 				<div class='project'>
 					<a href="https://defacer.herokuapp.com" target='blank'>
 						<img src="./images/defacer.png" /></a>
-						<h4>Defacer</h4>
-						<p>Defacer lets users sketch over famous paintings. Built with Javascript, Express, React, PostgreSQL, react-sketchpad, and the artsy.net API.</p>
-						<a href="https://github.com/jlgraves3/Defacer" target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+						<div class='info'>
+							<h4>Defacer</h4>
+							<p>Defacer lets users sketch over famous paintings. Built with Javascript, Express, React, PostgreSQL, react-sketchpad, and the artsy.net API.</p>
+							<a href="https://github.com/jlgraves3/Defacer" target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+						</div>
 				</div>
 
 				<div class='project'>
 					<a href="https://open-arms.herokuapp.com/" target='blank'>
 						<img src="./images/open_arms.png" /></a>
+					<div class='info'>
 					<h4>Open Arms</h4>
-					<p>An online service that locates all free meals and homeless shelters in Manhattan. Created with Javascript, Express, PostgreSQL, React, Leaflet.js, and Bootstrap.</p>
-					<a href='https://github.com/joetricot/Open_Arms_NYC' target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+						<p>An online service that locates all free meals and homeless shelters in Manhattan. Created with Javascript, Express, PostgreSQL, React, Leaflet.js, and Bootstrap.</p>
+						<a href='https://github.com/joetricot/Open_Arms_NYC' target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+					</div>
 				</div>
 
 				<div class='project'>
-					<a href='https://jg-food-diary.herokuapp.com/' target='blank'><img src="./images/food_diary/food_diary.png"/></a>
-					<h4>Food Diary</h4>
-					<p>An app that allows logged in users to track their daily food intake and view stats over time, built using Javascript, Express, postgreSQL, chart.js and the Nutritionix API</p>
-					<a href="https://github.com/jlgraves3/food-diary" target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+					<a href='https://jg-food-diary.herokuapp.com/' target='blank'><img src="./images/food_diary.png"/></a>
+					<div class='info'>
+						<h4>Food Diary</h4>
+						<p>An app that allows logged in users to track their daily food intake and view stats over time, built using Javascript, Express, postgreSQL, D3.js and the Nutritionix API</p>
+						<a href="https://github.com/jlgraves3/food-diary" target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+					</div>
 				</div>
 				<div class='project'>
 					<a href="http://bejeweled-lite.bitballoon.com" target='blank'>
 						<img src="./images/bejeweled_lite.png" /></a>
-					<h4>Bejeweled Lite</h4>
-					<p>A simplified version of the original Bejeweled game made using Javascript, HTML/CSS, and jQuery.</p>
-					<a href="https://github.com/jlgraves3/bejeweled-lite" target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
-
-
+					<div class='info'>
+						<h4>Bejeweled Lite</h4>
+						<p>A simplified version of the original Bejeweled game made using Javascript, HTML/CSS, and jQuery.</p>
+						<a href="https://github.com/jlgraves3/bejeweled-lite" target='blank' class='github'><i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+					</div>
 				</div>
 
 			</div>
@@ -108,7 +115,7 @@
 				<h1>Contact</h1>
 
 				<form method="post" action="mailto:jgraves@wesleyan.edu?Subject=I came across your portfolio" enctype="text/plain">
-					<h3>Shoot me an email!</h3>
+					<h3 class='email'>Shoot me an email!</h3>
 					<textarea rows='10'></textarea>	
 					<input type='submit' />
 				</form>
