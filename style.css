@@ -1,36 +1,191 @@
 body {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica Neue';
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
+  margin-top: 100px;
+  text-align: center;
   color: black;
   background-color: white;
-  text-align: center;
+}
+
+#about, #skills, #contact, #projects-container {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-around;;
+}
+
+nav a {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 5px;
+  letter-spacing: 0.1em;
+  width: 16vw;
+}
+
+#home {
+  font-size: 36px;
+  text-align: left;
+  margin-left: 25px;
+  letter-spacing: 0em;
+}
+
+#about {
+  display: flex;
+  width: 90vw;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#about p {
+  line-height: 1.2em;
+  font-size: 28px;
+  padding: 5vh 60px;
+}
+#headshot {
+  width: 0;
+}
+
+span a {
+  border-bottom: 1px solid black;
+}
+span a:hover {
+  background-color: #BCD1F7;
+  transition: 1s;
+}
+
+h1 {
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-size: 72px;
+  width: 80vw;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+ul {
+    width: 90vw;
+    min-height:650px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+
+li {
+  width: 40vw;
+  font-size: 32px;
+}
+
+#projects {
+  display: block;
+  width: 90vw;
+  height: auto;
+  margin: auto;
+}
+
+.project {
+  text-align: left;
+  max-width: 90vw;
+  margin: 50px auto;
+}
+
+img {
+  width: 90vw;
+  height: auto;
+  margin: 10px auto;
+}
+
+.project p {
+  font-size: 14px;
+  line-height: 0.9em;
+}
+
+.info {
+  width: 100%;
+}
+a.github {
+    font-size: 12px;
+    line-height: 3em;
+    font-weight: 600;
+  }
+a.github i {
+  margin-right: 2em;
+}
+
+h3, p, li, textarea {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+p {
+  text-align: left; 
 }
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   margin: 20px auto;
   height: 350px;
-  width: 50vw;
+}
+
+
+ 
+textarea, input {
+  font-family: 'Helvetica Neue';
 }
 
 textarea {
-  width: 94%;
+  border: 1px solid black;
+  width: 80vw;
+  height: 50vh;
   padding: 8px;
   font-size: 14px;
   text-align: left;
-}
- 
-textarea, input {
-  border: 1px solid black;
-  font-family: 'Charter';
+  margin-bottom: 50px;
+  margin-left: 0;
 }
 
 input[type='email'] {
@@ -40,294 +195,214 @@ input[type='email'] {
 }
 
 input[type='submit'] {
-  background-color: white;
-  font-family: 'Helvetica';
-  font-weight: 600;
-  font-size: 14px;
-  padding: 8px;
-  width: 100px;
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px black;
-}
-
-input[type='submit']:hover {
-  box-shadow: inset 2px 2px 2px black;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 0;
   cursor: pointer;
-  transition: 0.5s;
-} 
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-img {
-  height: 35vh;
-  margin: auto;
-  border: 1px solid black;
-}
-
-img:hover, a:hover {
-  transition: 0.5s;
-}
-
-nav {
   background-color: white;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav div {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  justify-content: space-around;
-}
-
-nav a {
-  font-size: 12px;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 0 5px;
   color: black;
-  letter-spacing: 0.15em;
 }
 
-nav a:first-child {
-  width: 200px;
-}
-/*
-h3 {
-  text-align: left;
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: 600;
-}
-*/
-h1 {
-  text-transform: uppercase;
-  font-size: 24px;
-  letter-spacing: 0.1em;
-  text-shadow: 2px 2px 0 #80dfff;
-  font-weight: bold;
-}
-
-#about { 
-  padding: 25px;
-  margin-top: 40px;
-}
-
-#about p {
-  line-height: 1.5em;
-  font-size: 18px;
-}
-
-
-p {
-  text-align: left;
-  font-weight: 100;
-  font-family: 'Charter';
-}
-
-span a {
-  border-bottom: 2px solid black;
-}
-span a:hover {
-  text-shadow: 1px 1px 0 #80dfff;
-}
-
-#skills {
-  padding: 20px;
-}
-
-ul {
-  text-align: left;
-  list-style: none;
-  padding: 0;
-  justify-content: flex-start;
-  margin: auto;
-}
-
-li {
-  font-family: 'Charter';
-  line-height: 1.8em;
-  width: auto;
-  text-align: center;
-  font-size: 18px;
-}
-
-#projects {
-  display: flex;
-  overflow-x: scroll; 
-  height: auto;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  margin: auto;
-  padding-bottom: 30px;
-  margin: 10px auto;
-}
-
-#projects-container {
-  width: 96vw;
-  padding: 2vw;
-  padding-top: 60px;
-  min-height: 500px;
-}
-
-#contact {
-  margin: 60px auto;
+.email,textarea, input[type='submit'], #contact form {
+  visibility: hidden;
+  height: 0;
 }
 
 .contact-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 14px;
-  margin: 20px auto;
+  margin: 80px auto;
 }
 
 .contact-links i {
-  font-size: 28px;
+  font-size: 64px;
   margin-top: 20px;
-}
-
-h3 {
-  font-size: 12px;
-  text-align: center;
-  font-weight: 400;
-  font-family: 'Charter';
 }
 
 .contact-links a {
   width: 20vw;
   margin: 10px;
-  padding: 10px 0;
+  height: 150px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.project p {
-  font-size: 14px;
-  line-height: 1.5em;
-}
-
-.project {
-  margin-right: 15px;
-  text-align: left;
-}
-
-
-#projects::-webkit-scrollbar {
-  height: 7px;
-}
-
-#projects::-webkit-scrollbar-track {
-  border: 1px solid black;
-}
-
-#projects::-webkit-scrollbar-thumb {
-  background-color: black;
-}
-
-a.github {
-  font-weight: 600;
-  font-size: 16px;
+.contact-links h3 {
+  font-weight: 500;
+  font-size: 24px;
 }
 
 
-@media (min-width: 600px) {
-  nav a {
-    font-size: 15px;
-    width: 120px;
-  }  
 
-  nav a:hover {
-    letter-spacing: 0.3em;
-  }
+
+
+
+
+
+
+@media only screen and (min-device-width: 650px) {
+
   h1 {
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 60px;
     font-size: 36px;
-  } 
+    width: 80vw;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  nav {
+    height: 50px;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 1px solid white;
+  }
+  nav a {
+    font-size: 12px;
+    width: 90px;
+    font-weight: bold;
+  }  
+  #home {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    letter-spacing: 0em;
+  }
+  nav a:hover , a#home:hover {
+    background-color: #BCD1F7;
+    transition: 1s;
+  }
+
+
   #about {
-    height: auto;
-    padding: 80px 0;
-  }
-  #about p {
-    font-size: 24px;
-    width: 70vw;
-    margin: 40px auto;
-    margin-bottom: 80px;
-  }
-
-  img {
-    height: 50vh;
-    width: auto;
-    border: 1px solid black;
-  }
-
-  #projects {
     display: flex;
-    overflow-x: scroll; 
-    height: auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    float: left;
+    width: 80vw;
+    align-items: flex-end;
+    justify-content: space-between;
   }
 
-  #projects-container {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    min-height: 90vh;
+  #about p {
+    font-size: 22px;
   }
+
+  #headshot {
+    width: 180px;
+  }
+
+  ul {
+    width: 70vw;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  li {
+    width: 20vw;
+    font-size: 20px;
+  }
+
 
   .project {
-    margin: 0 50px;
+    display: flex;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 15px;
   }
 
   .project p {
     font-size: 16px;
-    font-weight: lighter;
+    line-height: 1.5em;
   }
 
-    img:hover {
-      box-shadow: 2px 2px 2px;
-      transition: 0.4s; 
-   }
-
-  .contact-links i {
-    font-size: 28px;
+  #projects {
+    display: block;
+    width: 90vw;
+    margin: auto;
   }
 
-  h3 {
+  img {
+    width: 30vw;
+    height: auto;
+  }
+  .info {
+    width: 48vw;
+  }
+  .info h4 {
+    font-size: 18px;
+    line-height: 1em;
+    margin-bottom: 10px;
+  }
+  a.github {
+    font-size: 14px;
+    line-height: 3em;
+    font-weight: 600;
+  }
+
+  a.github:hover {
+    background-color: #BCD1F7;
+  }
+
+  .project a:hover img {
+    opacity: 0.5;
+    transition: 1s;
+  }
+  a.github i {
+    margin-right: 0;
+  }
+
+  .email,textarea, input[type='submit'], #contact form {
+    visibility: visible;
+    height: auto;
+  }
+
+  .email {
+    font-size: 18px;
+  }
+  textarea {
+    height: 200px;
+  }
+
+  input[type='submit'] {
     font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    font-family: 'Charter';
+    padding: 8px;
   }
-
-  .contact-links a:hover {
-    margin-top: -10px;
-    transition: 0.8s;
-  } 
-
+  input[type='submit']:hover {
+    color: #BCD1F7;
+    border-color: #BCD1F7;
+    transition: .5s;
+    
+  }
   .contact-links a {
-    width: 20vw;
+    width: 100px;
+    height: 100px;
     margin: 10px;
     padding: 10px 0;
     text-align: center;
+    color: black;
   }
-
-  ul {
-    width: 60vw;
-    margin: auto;
+  
+  .contact-links i {
+    font-size: 36px;
   }
-  li {
-    font-size: 22px;
-    margin: 10px;
+  .contact-links h3 {
+    font-size: 16px;
+  }
+  .contact-links a:hover {
+    color: #BCD1F7;
+    transition: 0.5s;
   }
 }
 
